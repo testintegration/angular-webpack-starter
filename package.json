@@ -5,13 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "bundle": "webpack"
+    "bundle": "del-cli ./js && webpack --config webpack.config.js --progress --profile --watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "angular": "^1.6.5",
+    "del-cli": "^1.1.0",
     "webpack": "^3.4.1"
   }
 }
